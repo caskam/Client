@@ -31,8 +31,8 @@ public class Client extends JFrame {
         );
         add(userText, BorderLayout.NORTH);
         chatWindow = new JTextArea();
-        add(new JScrollPane(chatWindow), BorderLayout.CENTER);
-        setSize(300, 150);
+        add(new JScrollPane(chatWindow), BorderLayout.CENTER );
+        setSize(700, 300);
         setVisible(true);
     }
 
@@ -81,7 +81,7 @@ public class Client extends JFrame {
 
     //close the streams and sockets
     private void closeCrap() {
-        showMessage("\n Closing crap down...");
+        showMessage("\n Shutting down ...");
         ableToType(false);
         try {
             output.close();
